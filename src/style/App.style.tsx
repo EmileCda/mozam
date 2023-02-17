@@ -28,6 +28,8 @@ export const AppTheme = {
   },
 };
 
+export const BorderRadius = "0.6rem";
+
 /**
  * contain style used globaly
  *
@@ -35,7 +37,7 @@ export const AppTheme = {
 
 export const AppGlobalStyle = createGlobalStyle`
   :root {
-    background-color: ${AppTheme.colors.dark}
+    background-color: ${AppTheme.colors.light}
   }
   html, body, #root {
     margin: 0;
@@ -49,39 +51,10 @@ export const AppGlobalStyle = createGlobalStyle`
   * {
     box-sizing: border-box;
   }
+
+  .hide{
+    display: none;
+  }
 `;
 
-export const Header = styled.header`
-  background-color: ${AppTheme.colors.dark};
-  min-height: 10rem;
-  flex-grow: 1;
-  display: flex;
-  justify-content: flex-start;
-`;
-export const Main = styled.main`
-  background-color: ${AppTheme.colors.medium};
-  flex-grow: 2;
-`;
-export const Footer = styled.footer`
-  background-color: ${AppTheme.colors.light};
-  min-height: 10rem;
-  flex-grow: 1;
-`;
 
-export const Logo = styled.div`
-  width: 20rem;
-  border-radius: 100%;
-  background-color: ${AppTheme.colors.light};
-  color: ${AppTheme.colors.dark};
-  font-size: 3rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-`;
-
-export const MenuBurger = styled.div`
-  min-height: 100px;
-  border-radius: 100%;
-  background-color: ${AppTheme.colors.lessLight};
-`;

@@ -1,12 +1,16 @@
-import { StrictMode } from "react";
-import {
-  AppGlobalStyle,
-  Footer,
-  Header,
-  Logo,
-  Main,
-  MenuBurger,
-} from "../style/App.style";
+import { StrictMode, useState } from "react";
+import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
+import { AppGlobalStyle } from "../style/App.style";
+import Footer from "./Footer";
+import Main from "./Main";
+import Header from "./Header";
+import Accueil from "./Accueil";
+import Contact from "./Contact";
+import About from "./About";
+import Country from "./Country";
+import Service from "./Service";
+import Package from "./Package";
+import Menu from "./Menu";
 
 /**
  * Principal design for the App.
@@ -18,14 +22,18 @@ import {
 export default function App() {
   return (
     <StrictMode>
-      <AppGlobalStyle />
-      <Header>
-        <Logo><p>Existentia</p>
-          </Logo>
-        <MenuBurger />
-      </Header>
-      <Main></Main>
-      <Footer></Footer>
+      <BrowserRouter>
+        <AppGlobalStyle />
+        <Header />
+        <Routes>
+          <Route path="/" element={<Accueil />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/country" element={<Country />} />
+          <Route path="/service" element={<Service />} />
+          <Route path="/package" element={<Package />} />
+        </Routes>
+      </BrowserRouter>
+      <Footer />
     </StrictMode>
   );
 }
