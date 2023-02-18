@@ -1,0 +1,205 @@
+{
+  "lang": ["fr", "en", "pr"],
+  "langDesc": ["Français", "English speaking", "língua portuguesa"],
+  "name": ["Existentia", "Existentia", "Existentia"],
+  "navBar0": ["Qui sommes nous", "[uk] Qui sommes nous", "[PR]Qui sommes nous"],
+  "navBar1": ["Le mozambique", "[uk] Le mozambique", "[PR]Le mozambique"],
+  "navBar2": ["Les services", "[uk] Les services", "[PR]Les services"],
+  "navBar3": ["Package", "[uk] Package", "[PR]Package"],
+  "navBar4": ["Contact", "[uk] Contact", "[PR]Contact"],
+  "navBar-link0": "./index.html",
+  "navBar-link1": "./page-1.html",
+  "navBar-link2": "./page-2.html",
+  "navBar-link3": "./page-3.html",
+  "navBar-link4": "./page-4.html",
+
+  "102": [
+    "service organisation de voyage",
+    "[uk]Organisation de voyage",
+    "[PR]"
+  ],
+  "103": [
+    "Personnel de maison",
+    "[uk]Personnel de maison",
+    "[PR]Personnel de maison"
+  ],
+  "104": [
+    "Prise-de-rendez-vous",
+    "[uk]Prise-de-rendez-vous",
+    "[PR]Prise-de-rendez-vous"
+  ],
+  "105": [
+    "Restaurants-et-Nightlife",
+    "[uk]Restaurants-et-Nightlife",
+    "[PR]Restaurants-et-Nightlife"
+  ],
+  "106": [
+    "service de Service-de-livraison",
+    "[uk]service de Service-de-livraison",
+    "[PR]service de Service-de-livraison"
+  ],
+  "201": ["En savoir plus", "[uk]En savoir plus", "[PR]En savoir plus"],
+  "202": [
+    "Les équipes de Premium Conciergerie sont à votre service 24h heures sur 24 et 7 jours sur 7, pour vous faciliter la vie au quotidien. ",
+    "[uk]Les équipes de Premium Conciergerie sont à votre service 24h heures sur 24 et 7 jours sur 7, pour vous faciliter la vie au quotidien. ",
+    "[PR]Les équipes de Premium Conciergerie sont à votre service 24h heures sur 24 et 7 jours sur 7, pour vous faciliter la vie au quotidien. "
+  ],
+  "203": [
+    "explication personnel de maison",
+    "[uk]explication personnel de maison",
+    "[PR]explication personnel de maison"
+  ],
+  "204": [
+    "Prise-de-rendez-vous texte long ",
+    "[uk]Prise-de-rendez-vous texte long",
+    "[PR]Prise-de-rendez-vous texte long"
+  ],
+  "205": [
+    "Restaurants-et-Nightlife texte long ",
+    "[uk]Restaurants-et-Nightlife texte long",
+    "[PR]Restaurants-et-Nightlife texte long"
+  ],
+  "206": [
+    "sservice de Service-de-livraison texte long",
+    "[uk]sservice de Service-de-livraison texte long",
+    "[PR]sservice de Service-de-livraison texte long"
+  ],
+  "301": [
+    "Découvrez nos offres",
+    "[uk] Découvrez nos offres",
+    "[PR]Découvrez nos offres"
+  ],
+  "302": ["En savoir plus", "[uk] En savoir plus", "[PR]En savoir plus"],
+  "303": [
+    "Nous vous proposons 3 offres d’abonnement. Les cartes membres Premium Conciergerie sont valables pour le porteur ainsi que la personne de son choix.",
+    "[uk] Nous vous proposons 3 offres d’abonnement. Les cartes membres Premium Conciergerie sont valables pour le porteur ainsi que la personne de son choix.",
+    "[PR]Nous vous proposons 3 offres d’abonnement. Les cartes membres Premium Conciergerie sont valables pour le porteur ainsi que la personne de son choix."
+  ],
+  "infoPackTitle": [
+    "Découvrez nos offres",
+    "[uk] Découvrez nos offres",
+    "[PR] Découvrez nos offres"
+  ],
+  "infoPack": [
+    "Nous vous proposons 3 offres d’abonnement. Les cartes membres Premium Existentia sont valables pour le porteur ainsi que la personne de son choix",
+    "[uk] Nous vous proposons 3 offres d’abonnement. Les cartes membres Premium Existentia sont valables pour le porteur ainsi que la personne de son choix",
+    "[PR] Nous vous proposons 3 offres d’abonnement. Les cartes membres Premium Existentia sont valables pour le porteur ainsi que la personne de son choix"
+  ],
+  "pack0": ["Forfait Serenity", "[uk] Pack Serenity", "[PR] Pack Serenity"],
+  "pack1": ["Forfait Elite", "[uk] Pack Elite", "[PR] Pack Elite"],
+  "pack2": [
+    "Forfait Experience",
+    "[uk] Pack Experience",
+    "[PR] Pack Experience"
+  ],
+  "packDesc0": [
+    "description long Forfait Serenity Eu nisl nunc mi ipsum faucibus vitae aliquet. Suspendisse potenti nullam ac tortor vitae purus faucibus. Morbi tristique senectus et netus et malesuada fames ac.. ",
+    "[uk] description long Forfait Serenity Eu nisl nunc mi ipsum faucibus vitae aliquet. Suspendisse potenti nullam ac tortor vitae purus faucibus. Morbi tristique senectus et netus et malesuada fames ac.. ",
+    "[PR] description long Forfait Serenity Eu nisl nunc mi ipsum faucibus vitae aliquet. Suspendisse potenti nullam ac tortor vitae purus faucibus. Morbi tristique senectus et netus et malesuada fames ac.. "
+  ],
+  "packDesc1": [
+    "description long Forfait Elite Eu nisl nunc mi ipsum faucibus vitae aliquet. Suspendisse potenti nullam ac tortor vitae purus faucibus. Morbi tristique senectus et netus et malesuada fames ac.. ",
+    "[uk] description long Forfait Elite Eu nisl nunc mi ipsum faucibus vitae aliquet. Suspendisse potenti nullam ac tortor vitae purus faucibus. Morbi tristique senectus et netus et malesuada fames ac.. ",
+    "[PR] description long Forfait Elite Eu nisl nunc mi ipsum faucibus vitae aliquet. Suspendisse potenti nullam ac tortor vitae purus faucibus. Morbi tristique senectus et netus et malesuada fames ac.. "
+  ],
+  "packDesc2": [
+    "description long Forfait Experience Eu nisl nunc mi ipsum faucibus vitae aliquet. Suspendisse potenti nullam ac tortor vitae purus faucibus. Morbi tristique senectus et netus et malesuada fames ac.. ",
+    "[uk] description long Forfait Experience Eu nisl nunc mi ipsum faucibus vitae aliquet. Suspendisse potenti nullam ac tortor vitae purus faucibus. Morbi tristique senectus et netus et malesuada fames ac.. ",
+    "[PR] description long Forfait Experience Eu nisl nunc mi ipsum faucibus vitae aliquet. Suspendisse potenti nullam ac tortor vitae purus faucibus. Morbi tristique senectus et netus et malesuada fames ac.. "
+  ],
+  "packPrice0": ["2600 €", "[uk] $2800", "[PR] 180 000 MT"],
+  "packPrice1": ["3600 €", "[uk] $3800", "[PR] 250 000 MT"],
+  "packPrice2": [" à définir €", "[uk]$ To plan ", "[PR] ??? MT"],
+  "packAsset0": [
+    "avantage Package Serenity",
+    "[uk] avantage Package Serenity",
+    "[PR]avantage Package Serenity"
+  ],
+  "packAsset1": [
+    "avantage Package Elite",
+    "[uk] avantage Package Elite",
+    "[PR]avantage Package Elite"
+  ],
+  "packAsset2": [
+    "avantage Package Experience",
+    "[uk] avantage Package Experience",
+    "[PR]avantage Package Experience"
+  ],
+  "packMore": [
+    "Package En savoir plus",
+    "[uk] Package En savoir plus",
+    "[PR] PackageEn savoir plus"
+  ],
+  "infoServiceTitle": ["Existentia", "Existentia", "Existentia"],
+  "infoService": [
+    "Nous offrons un grand nombre de services, en plus des services à la carte pour satisfaire vos exigences",
+    "[uk] Nous offrons un grand nombre de services, en plus des services à la carte pour satisfaire vos exigences",
+    "[PR] Nous offrons un grand nombre de services, en plus des services à la carte pour satisfaire vos exigences"
+  ],
+  "service0": ["aides à domicile", "[uk] Home services", "[PR] Home services"],
+  "service1": ["En famille", "[uk] Familly", "[PR] Home services"],
+  "service2": ["Mobilité", "[uk] Mobility", "[PR] Home services"],
+  "service3": ["Voiturier", "[uk] Car", "[PR] Home services"],
+  "service4": ["au mozambique", "[uk] In the country", "[PR] Home services"],
+  "service5": ["Loisirs", "[uk] leisures", "[PR] Home services"],
+
+  "serviceDesc0": [
+    "aides à domicile  description long  Eu nisl nunc mi ipsum faucibus vitae aliquet. Suspendisse potenti nullam ac tortor vitae purus faucibus. Morbi tristique senectus et netus et malesuada fames ac.. ",
+    "[UK] aides à domicile  description long  Eu nisl nunc mi ipsum faucibus vitae aliquet. Suspendisse potenti nullam ac tortor vitae purus faucibus. Morbi tristique senectus et netus et malesuada fames ac.. ",
+    "[PR] aides à domicile  description long  Eu nisl nunc mi ipsum faucibus vitae aliquet. Suspendisse potenti nullam ac tortor vitae purus faucibus. Morbi tristique senectus et netus et malesuada fames ac.. "
+  ],
+  "serviceDesc1": [
+    "En famille  description long  Eu nisl nunc mi ipsum faucibus vitae aliquet. Suspendisse potenti nullam ac tortor vitae purus faucibus. Morbi tristique senectus et netus et malesuada fames ac.. ",
+    "[UK] En famille  description long  Eu nisl nunc mi ipsum faucibus vitae aliquet. Suspendisse potenti nullam ac tortor vitae purus faucibus. Morbi tristique senectus et netus et malesuada fames ac.. ",
+    "[PR] En famille  description long  Eu nisl nunc mi ipsum faucibus vitae aliquet. Suspendisse potenti nullam ac tortor vitae purus faucibus. Morbi tristique senectus et netus et malesuada fames ac.. "
+  ],
+  "serviceDesc2": [
+    "Mobilité  description long  Eu nisl nunc mi ipsum faucibus vitae aliquet. Suspendisse potenti nullam ac tortor vitae purus faucibus. Morbi tristique senectus et netus et malesuada fames ac.. ",
+    "[UK] Mobilité  description long  Eu nisl nunc mi ipsum faucibus vitae aliquet. Suspendisse potenti nullam ac tortor vitae purus faucibus. Morbi tristique senectus et netus et malesuada fames ac.. ",
+    "[PR] Mobilité  description long  Eu nisl nunc mi ipsum faucibus vitae aliquet. Suspendisse potenti nullam ac tortor vitae purus faucibus. Morbi tristique senectus et netus et malesuada fames ac.. "
+  ],
+  "serviceDesc3": [
+    "Mobilité  description long  Eu nisl nunc mi ipsum faucibus vitae aliquet. Suspendisse potenti nullam ac tortor vitae purus faucibus. Morbi tristique senectus et netus et malesuada fames ac.. ",
+    "[UK] Mobilité  description long  Eu nisl nunc mi ipsum faucibus vitae aliquet. Suspendisse potenti nullam ac tortor vitae purus faucibus. Morbi tristique senectus et netus et malesuada fames ac.. ",
+    "[PR] Mobilité  description long  Eu nisl nunc mi ipsum faucibus vitae aliquet. Suspendisse potenti nullam ac tortor vitae purus faucibus. Morbi tristique senectus et netus et malesuada fames ac.. "
+  ],
+  "serviceDesc4": [
+    "au mozambique  description long  Eu nisl nunc mi ipsum faucibus vitae aliquet. Suspendisse potenti nullam ac tortor vitae purus faucibus. Morbi tristique senectus et netus et malesuada fames ac.. ",
+    "[UK] au mozambique  description long  Eu nisl nunc mi ipsum faucibus vitae aliquet. Suspendisse potenti nullam ac tortor vitae purus faucibus. Morbi tristique senectus et netus et malesuada fames ac.. ",
+    "[PR] au mozambique  description long  Eu nisl nunc mi ipsum faucibus vitae aliquet. Suspendisse potenti nullam ac tortor vitae purus faucibus. Morbi tristique senectus et netus et malesuada fames ac.. "
+  ],
+  "serviceDesc5": [
+    "Loisirs  description long  Eu nisl nunc mi ipsum faucibus vitae aliquet. Suspendisse potenti nullam ac tortor vitae purus faucibus. Morbi tristique senectus et netus et malesuada fames ac.. ",
+    "[UK] Loisirs  description long  Eu nisl nunc mi ipsum faucibus vitae aliquet. Suspendisse potenti nullam ac tortor vitae purus faucibus. Morbi tristique senectus et netus et malesuada fames ac.. ",
+    "[PR] Loisirs  description long  Eu nisl nunc mi ipsum faucibus vitae aliquet. Suspendisse potenti nullam ac tortor vitae purus faucibus. Morbi tristique senectus et netus et malesuada fames ac.. "
+  ],
+  "serviceMore": [
+    "Package En savoir plus",
+    "[uk] Package En savoir plus",
+    "[PR] PackageEn savoir plus"
+  ],
+
+  "401": ["Contact", "[uk] Contact", "[PR]Contact"],
+
+  "402": ["Map ", "[uk] Map ", "[PR]Map "],
+  "403": ["FAQ", "[uk] FAQ", "[PR]FAQ"],
+  "404": ["CGV", "[uk] CGV", "[PR]CGV"],
+  "405": ["Contact", "[uk] Contact", "[PR]Contact"],
+  "406": ["Contact", "[uk] Contact", "[PR]Contact"],
+  "407": ["mention légales", "[uk] mention légales", "[PR]mention légales"],
+  "408": [
+    "Données personnelles",
+    "[uk] Données personnelles",
+    "[PR]Données personnelles"
+  ],
+  "409": [
+    " Contactez-nous sur whatsapp ",
+    "[uk]  Contactez-nous sur whatsapp ",
+    "[PR] Contactez-nous sur whatsapp "
+  ],
+  "9995": [
+    "Prix Package Alpha",
+    "[uk] Prix Package Alpha",
+    "[PR]Prix Package Alpha"
+  ]
+}

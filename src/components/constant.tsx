@@ -26,8 +26,18 @@ export const myNavBar: JsonNavBar = {
   quantity: 5,
 };
 
-type Lang = "fr" | "en" | "pr";
+export type Lang = "fr" | "en" | "pr";
 export const MyLang: Lang[] = ["fr", "en", "pr"];
+export const defaultLang : Lang = "pr";
+let currentLang: Lang = defaultLang
+export function getLang(){
+  return currentLang ;
+}
+export function setLang(lang:Lang){
+  currentLang = lang ;
+  return currentLang ;
+}
+
 
 type PackType = "Serenity" | "Elite" | "Experience";
 

@@ -1,6 +1,7 @@
 import { StrictMode, useState } from "react";
 import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import { AppGlobalStyle } from "../style/App.style";
+import jsonData from "./../data/lang.json";
 import Footer from "./Footer";
 import Main from "./Main";
 import Header from "./Header";
@@ -12,6 +13,8 @@ import Service from "./Service";
 import Package from "./Package";
 import Menu from "./Menu";
 
+
+
 /**
  * Principal design for the App.
  * including a Header, a main and a footer
@@ -20,6 +23,10 @@ import Menu from "./Menu";
  *
  */
 export default function App() {
+
+
+
+
   return (
     <StrictMode>
       <BrowserRouter>
