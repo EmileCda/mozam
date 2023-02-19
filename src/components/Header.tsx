@@ -1,19 +1,14 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   BurgerMenu,
   BurgerNav,
   HeaderContainer,
   Img,
-  LangNav,
   Logo,
   MenuNav,
 } from "../style/Header.style";
 
-import {
-  defaultLang,
-  Lang,
-  setLang,
-} from "./constant";
+import { defaultLang, getLang, Lang, setLang } from "./constant";
 import Menu from "./Menu";
 
 /**
@@ -25,69 +20,70 @@ import fr from "./../image/fr.png";
 import pr from "./../image/pr.png";
 import en from "./../image/en.png";
 
-export function DisplayLogo() {
+export let stateLang: Lang = defaultLang;
+
+export function DisplayLogo(props: any) {
   return (
     <Logo>
-      <p>Existentia</p>
+      <p>{`Existentia ${props.lang}`}</p>
     </Logo>
   );
 }
 
-export default function Header() {
-  const [isHide, setDisplayState] = useState<boolean>(true);
-  const [codeLang, setCodeLang] = useState<Lang>(defaultLang);
+export function FlagLang(props: any) {
+  const src: string = `./mozam/src/image/${props.lang}.png`;
+  const alt: string = `${props.lang}`;
+  return (
+    <>
+      <Img
+        onClick={(e) => {
+          props.onClick(e);
+        }}
+        className={props.className}
+        src={src}
+        id={props.lang}
+        alt={alt}
+      />
+    </>
+  );
+}
 
-  function FRChosen() {
-    setCodeLang("fr");
-    setLang("fr");
-  }
-  function ENChosen() {
-    setCodeLang("en");
-    setLang("en");
-  }
-  function PRChosen() {
-    setCodeLang("pr");
-    setLang("pr");
-  }
-
-  function ToggleDisplayMode() {
-    setDisplayState(!isHide);
-  }
+export default function Header(props: any) {
+  const [displayState, setDisplayState] = useState<boolean>(true);
+  const currentLang = getLang();
 
   return (
     <>
-      <HeaderContainer>
-        <DisplayLogo />
+      <HeaderContainer
+     
+      >
+        <DisplayLogo lang={currentLang} />
         <MenuNav className={"hide"}>
-          <Menu lang={codeLang} />
+          <Menu lang={currentLang} />
         </MenuNav>
-        <LangNav>
-          <Img
-            onClick={FRChosen}
-            className={`${codeLang === "fr" ? "hide" : null}`}
-            src={fr}
-            alt="langue française"
-          />
-          <Img
-            onClick={PRChosen}
-            className={`${codeLang === "pr" ? "hide" : null}`}
-            src={pr}
-            // src={window.location.origin+"/image/pr.png"}
-            alt="íngua portuguesa"
-          />
-          <Img
-            onClick={ENChosen}
-            className={`${codeLang === "en" ? "hide" : null}`}
-            src={en}
-            alt="English speaking"
-          />
-        </LangNav>
-
-        <BurgerNav className={`${isHide ? "hide" : null}`}>
-          {/*  */}
-          <Menu lang={codeLang} />
+        <FlagLang
+          lang={"fr"}
+          onClick={props.onClick}
+          className={`${getLang() === "fr" ? "hide" : null}`}
+        />
+        <FlagLang
+          lang={"pr"}
+          onClick={props.onClick}
+          className={`${getLang() === "pr" ? "hide" : null}`}
+        />
+        <FlagLang
+          lang={"en"}
+          onClick={props.onClick}
+          className={`${getLang() === "en" ? "hide" : null}`}
+        />
+        <BurgerNav className={`${displayState ? "hide" : null}`}>
+          <Menu lang={currentLang} />
         </BurgerNav>
-        <BurgerMenu onClick={ToggleDisplayMode}>
+        <BurgerMenu
+          onClick={(e) => {
+            setDisplayState(!displayState);
+          }}
+        >
           <i className="fa-solid fa-bars"></i>
         </BurgerMenu>
       </HeaderContainer>

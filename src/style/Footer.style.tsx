@@ -7,9 +7,10 @@ import { AppTheme } from "./App.style";
 
 
 export const FooterContainer = styled.footer`
-  background-color: ${AppTheme.colors.medium};
+  background-color: ${AppTheme.colors.dark};
   min-height: 10rem;
   flex-grow: 1;
   display: flex;
   justify-content: flex-start;
+  border: 1px dashed  red;
 `;

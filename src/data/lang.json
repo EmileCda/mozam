@@ -7,7 +7,7 @@
   "navBar2": ["Les services", "[uk] Les services", "[PR]Les services"],
   "navBar3": ["Package", "[uk] Package", "[PR]Package"],
   "navBar4": ["Contact", "[uk] Contact", "[PR]Contact"],
-  "navBar-link0": "./Accueil",
+  "navBar-link0": "./",
   "navBar-link1": "./Country",
   "navBar-link2": "./Service",
   "navBar-link3": "./Package",

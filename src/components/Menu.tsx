@@ -1,8 +1,7 @@
 import { MyLink, MyNav } from "../style/Menu.style";
-import { Lang,  defaultLang } from "./constant";
+import { Lang, defaultLang, getLang  } from "./constant";
 import jsonData from "./../data/lang.json";
 const myDataLang: any = jsonData;
-
 
 const content: Record<string, any> = {};
 const listLang = myDataLang["lang"];
@@ -26,10 +25,15 @@ type menuProps = {
   lang: Lang;
 };
 
-export default function Menu({ lang }: menuProps) {
-  lang = lang == undefined ? defaultLang : lang;
-  let myContent = content[lang];
-
+export default function Menu(props: any) {
+  console.log(props);
+  // const lang: Lang = props.lang;
+  const lang: Lang = props.lang;
+  const lang2 = getLang();
+  const myContent = content[lang];
+  // const myContent = content[defaultLang];
+  console.log(getLang());
+  console.log(props.lang);
   return (
     <>
       <MyNav>

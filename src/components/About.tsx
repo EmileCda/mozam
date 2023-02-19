@@ -1,8 +1,16 @@
 import background from "./../image/Vilankulous1.jpg";
-export default function About() {
+import { getLang } from "./constant";
+export default function About(props: any) {
+
+  const currentLang = props.lang==="" ? getLang() : props.lang
+  console.log(props.lang)
+  console.log(currentLang)
+  console.log(getLang())
+  
+  
   return (
     <>
-      <p>About.tsx</p>
+      <p>{`About [${currentLang}]`}</p>
       <img src={background} alt="background" />
     </>
   );
