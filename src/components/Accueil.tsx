@@ -4,12 +4,14 @@ import Service from "./Service";
 
 export default function Accueil() {
   return (
-    <>
-      <MyContainer>
-        <p>Accueil.tsx</p>;
+    <><p>Accueil.tsx</p>;
+      {/* <MyContainer>
+        
         <Service />
         <Package />
-      </MyContainer>
+      </MyContainer> */}
     </>
   );
 }
+
+

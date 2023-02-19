@@ -1,9 +1,9 @@
-import logo from "./../image/peche_au_gros.jpg";
+import background from "./../image/Vilankulous1.jpg";
 export default function About() {
   return (
     <>
       <p>About.tsx</p>
-      <img src={logo} alt="logo" />
+      <img src={background} alt="background" />
     </>
   );
 }
