@@ -54,9 +54,7 @@ export default function Header(props: any) {
 
   return (
     <>
-      <HeaderContainer
-     
-      >
+      <HeaderContainer>
         <DisplayLogo lang={currentLang} />
         <MenuNav className={"hide"}>
           <Menu lang={currentLang} />

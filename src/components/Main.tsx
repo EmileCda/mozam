@@ -11,7 +11,6 @@ import { CarouselContainer, MainContainer, Packages, Services } from "../style/M
 export function Carousel() {
   return (
     <CarouselContainer>
-      {for (const index in caroussel)}
           <img
             className="rien hide"
             height="200rem"
