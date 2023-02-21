@@ -8,10 +8,11 @@ import { AppTheme, BorderRadius } from "./App.style";
 
 export const HeaderContainer = styled.header`
   background-color: ${AppTheme.colors.dark};
+  min-width: 100vw;
   max-height: 5rem;
   flex-grow: 1;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   padding: 10px;
   position: relative;
   border-radius: ${BorderRadius} ;
@@ -19,14 +20,17 @@ export const HeaderContainer = styled.header`
 
 
 export const Logo = styled.div`
-  background-color: ${AppTheme.colors.light};
+  background-color: ${AppTheme.colors.dark};
+  color: ${AppTheme.colors.light};
+  font-family: ${AppTheme.font.logo};
+
   height: 5rem;
   width: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 100% ;
-  font-size: 1rem;
+  font-size: 3rem;
   flex-grow: 2;
   
 `;

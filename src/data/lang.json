@@ -2,17 +2,112 @@
   "lang": ["fr", "en", "pr"],
   "langDesc": ["Français", "English speaking", "língua portuguesa"],
   "name": ["Existentia", "Existentia", "Existentia"],
-  "navBar0": ["Accueil", "[uk] Accueil", "[PR]Accueil"],
-  "navBar1": ["Le mozambique", "[uk] Le mozambique", "[PR]Le mozambique"],
-  "navBar2": ["Les services", "[uk] Les services", "[PR]Les services"],
-  "navBar3": ["Package", "[uk] Package", "[PR]Package"],
-  "navBar4": ["Contact", "[uk] Contact", "[PR]Contact"],
-  "navBar-link0": "./",
-  "navBar-link1": "./Country",
-  "navBar-link2": "./Service",
-  "navBar-link3": "./Package",
-  "navBar-link4": "./About",
 
+  "navBar": [
+    {
+      "fr": "Accueil",
+      "en": "[uk] Accueil",
+      "pr": "[PR] Accueil",
+      "link": "./"
+    },
+    {
+      "fr": "Le mozambique",
+      "en": "[uk] Le mozambique",
+      "pr": "[PR] Le mozambique",
+      "link": "./Country"
+    },
+    {
+      "fr": "Les services",
+      "en": "[uk] Les services",
+      "pr": "[PR] Les services",
+      "link": "./Service"
+    },
+    {
+      "fr": "Package",
+      "en": "[uk] Package",
+      "pr": "[PR] Package",
+      "link": "./Package"
+    },
+    {
+      "fr": "Contact",
+      "en": "[uk] Contact",
+      "pr": "[PR] Contact",
+      "link": "./About"
+    }
+  ],
+
+   "carouselInterval" : 5000,
+  "carousel": [
+    {
+      "fr": "description image 1",
+      "en": "[en] description image 1",
+      "pr": "[pr]description image 1",
+      "url": "/src/image/Vilankulous1.jpg"
+    },
+    {
+      "fr": "description image 2",
+      "en": "[en] description image 2",
+      "pr": "[pr]description image 2",
+      "url": "/src/image/Vilankulous2.jpg"
+    },
+    {
+      "fr": "description image 3",
+      "en": "[en] description image 3",
+      "pr": "[pr]description image 3",
+      "url": "/src/image/Vilankulous3.jpg"
+    },
+    {
+      "fr": "description image4",
+      "en": "[en] description image4",
+      "pr": "[pr]description image4",
+      "url": "/src/image/maputo1.jpg"
+    },
+    {
+      "fr": "description image5",
+      "en": "[en] description image5",
+      "pr": "[pr]description image5",
+      "url": "/src/image/maputo2.jpg"
+    },
+    {
+      "fr": "description image6",
+      "en": "[en] description image6",
+      "pr": "[pr]description image6",
+      "url": "/src/image/maputo3.jpg"
+    }
+  ],
+
+  "services" :[
+
+    {
+      "fr": ["Home services","description Home services", "service-home.jpg"],
+      "en": ["[en]Home services","description Home services", "service-home.jpg"],
+      "pr": ["[pr] sHome services","description Home services", "service-home.jpg"]
+      
+    },
+    {
+      "fr": ["Familly","description Familly", "service-Familly.jpg"],
+      "en": ["[en]Familly","description Familly", "service-Familly.jpg"],
+      "pr": ["[pr] sFamilly","description Familly", "service-Familly.jpg"]
+
+    },
+    {
+      "fr": ["Mobility and Car","description Mobility and Car", "service-Mobility-and-Car.jpg"],
+      "en": ["[en]Mobility and Car","description Mobility and Car", "service-Mobility-and-Car.jpg"],
+      "pr": ["[pr] sMobility and Car","description Mobility and Car", "service-Mobility-and-Car.jpg"]
+    },
+    {
+      "fr": ["In the country","description In the country", "service-In-the-country.jpg"],
+      "en": ["[en]In the country","description In the country", "service-In-the-country.jpg"],
+      "pr": ["[pr] sIn the country","description In the country", "service-In-the-country.jpg"]
+    },
+    {
+      "fr": ["Leisures","description Leisures", "service-Leisures.jpg"],
+      "en": ["[en]Leisures","description Leisures", "service-Leisures.jpg"],
+      "pr": ["[pr] sLeisures","description Leisures", "service-Leisures.jpg"]
+    }
+
+
+  ],
   "102": [
     "service organisation de voyage",
     "[uk]Organisation de voyage",

@@ -31,7 +31,6 @@ export const MyLang: Lang[] = ["fr", "en", "pr"];
 export const defaultLang : Lang = "pr";
 
 let currentLang: Lang = defaultLang;
-console.log(currentLang);
 export function getLang(){
   return currentLang ;
 }

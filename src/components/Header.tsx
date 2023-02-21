@@ -19,6 +19,7 @@ import Menu from "./Menu";
 import fr from "./../image/fr.png";
 import pr from "./../image/pr.png";
 import en from "./../image/en.png";
+import { AppGlobalStyle } from "../style/App.style";
 
 export let stateLang: Lang = defaultLang;
 
@@ -31,8 +32,22 @@ export function DisplayLogo(props: any) {
 }
 
 export function FlagLang(props: any) {
-  const src: string = `./mozam/src/image/${props.lang}.png`;
+  // const src: string = `./src/image/${props.lang}.png`;
+  let src: string = fr;
   const alt: string = `${props.lang}`;
+
+  switch (props.lang) {
+    case "fr":
+      src = fr;
+      break;
+    case "pr":
+      src = pr;
+      break;
+    case "en":
+      src = en;
+      break;
+  }
+
   return (
     <>
       <Img
@@ -55,8 +70,9 @@ export default function Header(props: any) {
   return (
     <>
       <HeaderContainer>
+        <AppGlobalStyle />
         <DisplayLogo lang={currentLang} />
-        <MenuNav className={"hide"}>
+        <MenuNav className={`hide`}>
           <Menu lang={currentLang} />
         </MenuNav>
         <FlagLang
@@ -79,7 +95,9 @@ export default function Header(props: any) {
         </BurgerNav>
         <BurgerMenu
           onClick={(e) => {
+            console.log(`BurgerMenu"   ${displayState}`);
             setDisplayState(!displayState);
+            console.log(`BurgerMenu"   ${displayState}`);
           }}
         >
           <i className="fa-solid fa-bars"></i>

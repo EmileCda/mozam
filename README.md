@@ -68,5 +68,19 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
 # mozam
+
 # mozam
+
+# how to deploy in Github
+
+https://www.geeksforgeeks.org/how-to-deploy-your-react-websites-on-github/
+
+https://www.freecodecamp.org/news/deploy-a-react-app-to-github-pages/
+
+https://blog.logrocket.com/deploying-react-apps-github-pages/
+
+https://github.com/gitname/react-gh-pages
+
+https://emilecda.github.io/mozam/

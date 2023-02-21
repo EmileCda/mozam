@@ -27,6 +27,13 @@ export const AppTheme = {
     lessLight: "#ffee32",
     light: "#d6d6d6",
   },
+
+font :{ regular : `Poppins', sans-serif`,
+logo : `'Bilbo Swash Caps', cursive `,
+
+}
+  
+    
 };
 
 export const BorderRadius = "0.6rem";
@@ -45,15 +52,18 @@ export const AppGlobalStyle = createGlobalStyle`
     padding: 0;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     min-width: 100vw;
     min-height: 100vh;
     font-size: 18px;
+    font-family: ${AppTheme.font.regular};
   }
   * {
     box-sizing: border-box;
   }
 
-  .hide{
+.hide{
     display: none;
   }
 `;
