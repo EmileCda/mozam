@@ -39,10 +39,6 @@ export default function Service(props: any) {
     content[key] = serviceList;
   }
   const myContent = content[lang];
-  console.log(lang);
-  console.log(content);
-
-  console.log(myContent);
 
   const root : string = "/src/image/";
   return (

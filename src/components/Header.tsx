@@ -95,9 +95,7 @@ export default function Header(props: any) {
         </BurgerNav>
         <BurgerMenu
           onClick={(e) => {
-            console.log(`BurgerMenu"   ${displayState}`);
             setDisplayState(!displayState);
-            console.log(`BurgerMenu"   ${displayState}`);
           }}
         >
           <i className="fa-solid fa-bars"></i>
