@@ -1,17 +1,16 @@
 import { StrictMode, useState } from "react";
 import { BrowserRouter, Link, Navigate, Route, Routes } from "react-router-dom";
 import { AppGlobalStyle } from "../style/App.style";
-import jsonData from "./../data/lang.json";
 import Footer from "./Footer";
 import About from "./About";
 import Country from "./Country";
 import Service from "./Service";
 import Package from "./Package";
-import Header from "./Header";
-import { defaultLang, Lang, setLang } from "./constant";
 import Accueil from "./Accueil";
 import Tictac from "./Tictac";
 
+import jsonData from "./../data/lang.json";
+import Header from "./Header";
 export const myDataLang: any = jsonData;
 /**
  * Principal design for the App.
@@ -22,30 +21,22 @@ export const myDataLang: any = jsonData;
  */
 
 export default function App() {
-  const [langState, setLangState] = useState<Lang>(defaultLang);
-
-  // setLangState(defaultLang);
-  function handleOnClick(props: any) {
-    setLangState(props.target.id);
-    setLang(props.target.id);
-  }
   return (
     <StrictMode>
-       <BrowserRouter>
-         <AppGlobalStyle />
+      <BrowserRouter>
+        <AppGlobalStyle />
 
-        <Header onClick={(event: any) => handleOnClick(event)} lang={langState} />
-         <Routes>
-           <Route path="/mozam"  element={<Accueil lang={langState} />} />
-           {/* <Route path="/country" element={<Country />} /> */}
-           <Route path="/service" element={<Service lang={langState} />} />
-           {/* <Route path="/package" element={<Package />} /> */}
-           <Route path="/About" element={<About lang={langState} />} />
-         </Routes>
-       </BrowserRouter>
-       <Footer />
-    {/* <Tictac /> */}
-     </StrictMode>
-
+        <Header />
+        <Routes>
+          <Route path="/" element={<Accueil />} />
+          <Route path="/country" element={<Country />} />
+          <Route path="/service" element={<Service />} />
+          <Route path="/package" element={<Package />} />
+          <Route path="/About" element={<About />} />
+        </Routes>
+      </BrowserRouter>
+      <Footer />
+      <Tictac />
+    </StrictMode>
   );
 }

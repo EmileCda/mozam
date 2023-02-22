@@ -1,7 +1,16 @@
 {
   "lang": ["fr", "en", "pr"],
-  "langDesc": ["Français", "English speaking", "língua portuguesa"],
-  "name": ["Existentia", "Existentia", "Existentia"],
+  "langDesc": {
+    "fr": "Langue Française",
+    "en": "English speaking",
+    "pr": "língua portuguesa"
+  },
+
+  "name": {
+    "fr": "Existentia",
+    "en": "Existentia",
+    "pr": "Existentia"
+  },
 
   "navBar": [
     {
@@ -36,7 +45,7 @@
     }
   ],
 
-   "carouselInterval" : 5000,
+  "carouselInterval": 5000,
   "carousel": [
     {
       "fr": "description image 1",
@@ -76,37 +85,64 @@
     }
   ],
 
-  "services" :[
-
+  "services": [
     {
-      "fr": ["Home services","description Home services", "service-home.jpg"],
-      "en": ["[en]Home services","description Home services", "service-home.jpg"],
-      "pr": ["[pr] sHome services","description Home services", "service-home.jpg"]
-      
+      "fr": ["Home services", "description Home services", "service-home.jpg"],
+      "en": [
+        "[en]Home services",
+        "description Home services",
+        "service-home.jpg"
+      ],
+      "pr": [
+        "[pr] sHome services",
+        "description Home services",
+        "service-home.jpg"
+      ]
     },
     {
-      "fr": ["Familly","description Familly", "service-Familly.jpg"],
-      "en": ["[en]Familly","description Familly", "service-Familly.jpg"],
-      "pr": ["[pr] sFamilly","description Familly", "service-Familly.jpg"]
-
+      "fr": ["Familly", "description Familly", "service-Familly.jpg"],
+      "en": ["[en]Familly", "description Familly", "service-Familly.jpg"],
+      "pr": ["[pr] sFamilly", "description Familly", "service-Familly.jpg"]
     },
     {
-      "fr": ["Mobility and Car","description Mobility and Car", "service-Mobility-and-Car.jpg"],
-      "en": ["[en]Mobility and Car","description Mobility and Car", "service-Mobility-and-Car.jpg"],
-      "pr": ["[pr] sMobility and Car","description Mobility and Car", "service-Mobility-and-Car.jpg"]
+      "fr": [
+        "Mobility and Car",
+        "description Mobility and Car",
+        "service-Mobility-and-Car.jpg"
+      ],
+      "en": [
+        "[en]Mobility and Car",
+        "description Mobility and Car",
+        "service-Mobility-and-Car.jpg"
+      ],
+      "pr": [
+        "[pr] sMobility and Car",
+        "description Mobility and Car",
+        "service-Mobility-and-Car.jpg"
+      ]
     },
     {
-      "fr": ["In the country","description In the country", "service-In-the-country.jpg"],
-      "en": ["[en]In the country","description In the country", "service-In-the-country.jpg"],
-      "pr": ["[pr] sIn the country","description In the country", "service-In-the-country.jpg"]
+      "fr": [
+        "In the country",
+        "description In the country",
+        "service-In-the-country.jpg"
+      ],
+      "en": [
+        "[en]In the country",
+        "description In the country",
+        "service-In-the-country.jpg"
+      ],
+      "pr": [
+        "[pr] sIn the country",
+        "description In the country",
+        "service-In-the-country.jpg"
+      ]
     },
     {
-      "fr": ["Leisures","description Leisures", "service-Leisures.jpg"],
-      "en": ["[en]Leisures","description Leisures", "service-Leisures.jpg"],
-      "pr": ["[pr] sLeisures","description Leisures", "service-Leisures.jpg"]
+      "fr": ["Leisures", "description Leisures", "service-Leisures.jpg"],
+      "en": ["[en]Leisures", "description Leisures", "service-Leisures.jpg"],
+      "pr": ["[pr] sLeisures", "description Leisures", "service-Leisures.jpg"]
     }
-
-
   ],
   "102": [
     "service organisation de voyage",

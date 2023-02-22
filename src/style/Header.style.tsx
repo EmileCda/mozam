@@ -32,7 +32,7 @@ export const Logo = styled.div`
   border-radius: 100% ;
   font-size: 3rem;
   flex-grow: 2;
-  
+  cursor: pointer;
 `;
 
 
@@ -80,5 +80,5 @@ export const LangNav = styled.div`
 export const Img = styled.img`
   height: 2rem;
   width: 2rem;
-
+  cursor: pointer;
 `

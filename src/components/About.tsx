@@ -1,17 +1,21 @@
+import { useStore } from "@nanostores/react";
 import background from "./../image/Vilankulous1.jpg";
-import { getLang } from "./constant";
-export default function About(props: any) {
+import jsonData from "./../data/lang.json";
+import { headerStore } from "../store/Header.store";
+const myDataLang: any = jsonData;
 
-  const currentLang = props.lang==="" ? getLang() : props.lang
-  console.log(props.lang)
-  console.log(currentLang)
-  console.log(getLang())
-  
+
+
+
+export default function About(props: any) {
+  const { lang, } = useStore(headerStore);
   
   return (
     <>
-      <p>{`About [${currentLang}]`}</p>
+      <p>{`About [${lang}]`}</p>
       <img src={background} alt="background" />
+
+      <p>`{myDataLang["langDesc"][lang]}`</p>
     </>
   );
 }

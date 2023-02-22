@@ -1,42 +1,45 @@
-import { useEffect, useState } from "react";
-import {
-  BurgerMenu,
-  BurgerNav,
-  HeaderContainer,
-  Img,
-  Logo,
-  MenuNav,
-} from "../style/Header.style";
-
-import { defaultLang, getLang, Lang, setLang } from "./constant";
-import Menu from "./Menu";
-
 /**
  * this component is in charge to display the header
  * header is : logo, nav-bar,lang-bar,burger-menu
  *
  */
+import { useStore } from "@nanostores/react";
+import { headerStore, setbur, setStoreLang, toggleStoreBurgerMenuState } from "../store/Header.store";
+import { AppGlobalStyle } from "../style/App.style";
+import { BurgerMenu, BurgerNav, HeaderContainer, Img, Logo, MenuNav } from "../style/Header.style";
+import Menu from "./Menu";
+
 import fr from "./../image/fr.png";
 import pr from "./../image/pr.png";
 import en from "./../image/en.png";
-import { AppGlobalStyle } from "../style/App.style";
+import { Lang } from "./constant";
+import { StrictMode } from "react";
 
-export let stateLang: Lang = defaultLang;
 
-export function DisplayLogo(props: any) {
-  return (
-    <Logo>
-      <p>{`Existentia ${props.lang}`}</p>
+
+export function DisplayLogo() {
+const { lang, burgerMenuOn, martin } = useStore(headerStore);
+return (
+    <Logo onClick={() =>setbur("mom")}>
+      {/* <p>DisplayLogo</p> */}
+      {/* <p>{`Existentia `}</p> */}
+      <p>{`Existentia ${lang}  ${martin}`}</p>
     </Logo>
   );
 }
 
-export function FlagLang(props: any) {
-  // const src: string = `./src/image/${props.lang}.png`;
-  let src: string = fr;
-  const alt: string = `${props.lang}`;
 
-  switch (props.lang) {
+type flagLangProps = {
+  className: string;
+  lang: Lang;
+  onClick: (lang: Lang) => void;
+};
+
+export function FlagLang({ className, lang }: flagLangProps) {
+  // setStoreLang(lang);
+  const alternate: string = "toto";
+  let src: string = pr;
+  switch (lang) {
     case "fr":
       src = fr;
       break;
@@ -46,61 +49,57 @@ export function FlagLang(props: any) {
     case "en":
       src = en;
       break;
+    default:
+      src = pr;
+      break;
   }
 
   return (
     <>
-      <Img
-        onClick={(e) => {
-          props.onClick(e);
-        }}
-        className={props.className}
-        src={src}
-        id={props.lang}
-        alt={alt}
-      />
+      <Img className={className} src={src} id={lang} alt={alternate} onClick={()=>setStoreLang(lang)}/>
     </>
   );
 }
 
-export default function Header(props: any) {
-  const [displayState, setDisplayState] = useState<boolean>(true);
-  const currentLang = getLang();
+
+export default function Header() {
+  const { lang,burgerMenuOn } = useStore(headerStore);
 
   return (
     <>
+        <StrictMode>
+
       <HeaderContainer>
         <AppGlobalStyle />
-        <DisplayLogo lang={currentLang} />
+        <DisplayLogo />
         <MenuNav className={`hide`}>
-          <Menu lang={currentLang} />
+          <Menu />
         </MenuNav>
         <FlagLang
           lang={"fr"}
-          onClick={props.onClick}
-          className={`${getLang() === "fr" ? "hide" : null}`}
+          onClick={(lang) => setStoreLang(lang)}
+          className={`${lang === "fr" ? "hide" : null}`}
         />
         <FlagLang
           lang={"pr"}
-          onClick={props.onClick}
-          className={`${getLang() === "pr" ? "hide" : null}`}
+          onClick={() => setStoreLang("pr")}
+          className={`${lang === "pr" ? "hide" : null}`}
         />
         <FlagLang
           lang={"en"}
-          onClick={props.onClick}
-          className={`${getLang() === "en" ? "hide" : null}`}
+          onClick={() => setStoreLang("en")}
+          className={`${lang === "en" ? "hide" : null}`}
         />
-        <BurgerNav className={`${displayState ? "hide" : null}`}>
-          <Menu lang={currentLang} />
+        <BurgerNav className={`${burgerMenuOn ?  null :"hide"}`}>
+          <Menu />
         </BurgerNav>
-        <BurgerMenu
-          onClick={(e) => {
-            setDisplayState(!displayState);
-          }}
-        >
-          <i className="fa-solid fa-bars"></i>
+        <BurgerMenu onClick={() => toggleStoreBurgerMenuState(!burgerMenuOn) }>
+        {/* <BurgerMenu onClick={() => setStoreLang("en") }> */}
+          <i className="fa-solid fa-bars" ></i>
         </BurgerMenu>
+
       </HeaderContainer>
+      </StrictMode>
     </>
   );
 }
