@@ -13,6 +13,12 @@ export const MyNav = styled.nav`
   text-decoration: none;
   border-radius: 0.6rem;
   padding: 0.6rem;
+  /* translate: 0px 0px; */
+  /* transition: all 1s ease-in-out; */
+  position: absolute;
+  top : 0px;
+  right: 0px;
+  z-index: 0;
 `;
 
 export const MyLink = styled(Link)`

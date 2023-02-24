@@ -16,7 +16,9 @@ export const HeaderContainer = styled.header`
   padding: 10px;
   position: relative;
   border-radius: ${BorderRadius} ;
+  z-index: 1;
   `
+  
 
 
 export const Logo = styled.div`
@@ -33,6 +35,7 @@ export const Logo = styled.div`
   font-size: 3rem;
   flex-grow: 2;
   cursor: pointer;
+  z-index: 1;
 `;
 
 
@@ -65,7 +68,13 @@ export const BurgerNav = styled.div`
   position : absolute;
   top: 5rem;
   right: 1rem;
-
+  /* transform: translateX(100%); */
+  translate: 0px 0px;
+  transition: all 1s ease-in-out;
+  position: absolute;
+  top : 100px;
+  right: 0px;
+  z-index: 0;
 `
 
 export const LangNav = styled.div`

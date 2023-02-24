@@ -31,14 +31,14 @@ const { lang,burgerMenuOn } = useStore(headerStore);
   const myContent = content[lang];
   return (
     <>
-      <MyNav>
+      <MyNav><ul>
         {myContent.map((value : tItem, index : number) => (
-          <MyLink key={index} to={value.link}>
+          <li><MyLink key={index} to={value.link}>
             {value.label}
-          </MyLink>
+          </MyLink></li>
 
         ))}
-      </MyNav>
+      </ul></MyNav>
     </>
   );
 }

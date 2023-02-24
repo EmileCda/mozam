@@ -63,8 +63,14 @@ export const AppGlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 
-.hide{
-    display: none;
+  .hide{
+    display : none ;
+    
+  }
+  .getOut{
+    transform: translateX(0%);
+
+    
   }
 `;
 
